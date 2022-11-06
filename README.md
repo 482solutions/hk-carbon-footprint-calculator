@@ -1,2 +1,0 @@
-# hk_carbon_footprint_calculator
-Carbon footprint calculator

@@ -49,7 +49,7 @@ class location_intensity:
         content_json = response.text
         return json.loads(content_json)
 
-#Calculate C02 based on time
+#Calculate C02 based on time and energy
 class energy_estimate:
     def __init__(self) -> None:
         pass
@@ -73,8 +73,8 @@ if __name__ == "__main__":
     a.add_parameters(6.8770394, 45.9162776)
     print(a.calculate())
 
-    #Testing enery estimation
+    #Testing enery estimation based on time and energy
     a = energy_estimate()
-    print(a.calculate(93))
+    print(a.calculate(93, 60))
     
 
