@@ -35,7 +35,7 @@ if __name__ == "__main__":
 If a user have the information of the amount of carbon emitted in kwh, this function will take that as a based and calculate carbon emission. 
 
 To test that portion, simply uncomment this portion and run.
-For example, a truck uses 10 kwh for 30 minutes.
+The code below is based of an exmaple of a truck that emitted 10 kwh for 60 minutes.
 ```python
 if __name__ == "__main__":
     #Testing enery estimation based on time and energy
