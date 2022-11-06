@@ -1,11 +1,15 @@
 # hk_carbon_footprint_calculator
-Carbon footprint calculator
-Uncomment portion of the main code to test the script
 
-# Description
-There are 3 classes in the file that calculates CO2 emission based on distance, location or time & energy.
+## Description
+There are 3 classes in the file that calculates CO2 emission based on distance, location or time & energy. No additional libraries are used.
 
-# Estimate based on distance
+### Quickstart
+To run and test all of the functions.
+```python
+python3 estimates.py
+```
+
+## Estimate based on distance
 It uses an api from [climatiq](https://www.climatiq.io/explorer) to estimate CO2 emission based on the distance and type of vehicle. Since they do not have a data in regards to autonomous robots, we're using an electric vehicle as the base.
 
 To use that portion, simply uncomment this portion and run.
@@ -18,7 +22,7 @@ if __name__ == "__main__":
     print(a.calculate())
 ```
 
-# Estimate based on location
+## Estimate based on location
 It uses an api from [co2signal](https://www.co2signal.com/) to estimate CO2 emission intensity based on the location (lon, lat). 
 
 To test that portion, simply uncomment this portion and run
@@ -31,14 +35,15 @@ if __name__ == "__main__":
     print(a.calculate())
 ```
 
-# Estimate based on time and energy
+## Estimate based on time and energy
 If a user have the information of the amount of carbon emitted in kwh, this function will take that as a based and calculate carbon emission. 
 
 To test that portion, simply uncomment this portion and run.
-The code below is based of an exmaple of a truck that emitted 10 kwh for 60 minutes.
+The code below is based of an example of a truck that emitted 10 kwh for 60 minutes.
 ```python
 if __name__ == "__main__":
     #Testing enery estimation based on time and energy
     a = energy_estimate()
     print(a.calculate(10, 60))
 ```
+
